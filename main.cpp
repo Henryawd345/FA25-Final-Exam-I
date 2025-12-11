@@ -33,5 +33,13 @@ int main () {
         }
     } 
 
+    cout << "Busiest airport with count " << maxCount << ":\n";
+        for (auto &entry : traffic){
+            if (entry.second == maxCount){
+                cout << entry.first << " " << entry.second << "\n";
+
+            }
+        }
+        
     return 0;
 }
