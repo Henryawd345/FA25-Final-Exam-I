@@ -4,6 +4,17 @@
 #include <map>
 using namespace std;
 
+void printInRange(const map<string, int> &traffic, int low, int high){
+    cout << "Airports with traffic in range [" << low << ", " << high << "]:\n";
+    for (const auto &entry : traffic){
+        if (entry.second >= low && entry.second <= high){
+            cout << entry.first << " " << entry.second << "\n";
+        }
+    }
+    cout << "\n";
+}
+
+
 int main () {
     map<string, int> traffic;
 
