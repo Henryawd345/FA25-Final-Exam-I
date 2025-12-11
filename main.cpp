@@ -26,5 +26,12 @@ int main () {
         cout << entry.first << " " << entry.second << "\n";
     }
 
+    int maxCount = 0;
+    for (const auto &entry : traffic){
+        if(entry.second > maxCount){
+            maxCount = entry.second;
+        }
+    } 
+
     return 0;
 }
