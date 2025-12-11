@@ -53,7 +53,7 @@ int main () {
 
     printInRange(traffic, 5, 8);
     printInRange(traffic, 9, 12);
-    
+    printInRange(traffic, 20, 35);
 
 
     return 0;
