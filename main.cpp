@@ -25,8 +25,6 @@ int main () {
     for (const auto &entry : traffic){
         cout << entry.first << " " << entry.second << "\n";
     }
-    
-
 
     return 0;
 }
