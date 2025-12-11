@@ -5,13 +5,12 @@
 using namespace std;
 
 void printInRange(const map<string, int> &traffic, int low, int high){
-    cout << "Airports with traffic in range [" << low << ", " << high << "]:\n";
+    cout << "\nAirports with traffic in range [" << low << ", " << high << "]:\n";
     for (const auto &entry : traffic){
         if (entry.second >= low && entry.second <= high){
             cout << entry.first << " " << entry.second << "\n";
         }
     }
-    cout << "\n";
 }
 
 
@@ -44,12 +43,18 @@ int main () {
         }
     } 
 
-    cout << "Busiest airport with count " << maxCount << ":\n";
+    cout << "\nBusiest airport with count " << maxCount << ":\n";
         for (auto &entry : traffic){
             if (entry.second == maxCount){
                 cout << entry.first << " " << entry.second << "\n";
 
             }
         }
+
+    printInRange(traffic, 5, 8);
+    printInRange(traffic, 9, 12);
+    
+
+
     return 0;
 }
